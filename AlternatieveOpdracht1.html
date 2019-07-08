@@ -1,0 +1,29 @@
+<script>
+	function invoergegevens(){
+		var voornaam= document.getElementById("tekstveld1").value;
+        var achternaam= document.getElementById("tekstveld2").value;
+        var geboortedatum= document.getElementById("tekstveld3").value;
+
+		var welkomsttekstDiv = document.getElementById("welkomsttekst");
+		welkomsttekstDiv.innerHTML = "Dag " + voornaam + " " + achternaam + "!" + "Fijn dat je op " + geboortedatum + " geboren bent."
+	
+
+
+
+        
+	}
+</script>
+<style>
+
+</style>
+Persoonsgegevens
+<br><br>
+Voornaam<br>
+<input type=text id=tekstveld1><br>
+Achternaam<br>
+<input type=text id=tekstveld2><br>
+Geboortedatum<br>
+<input type=text id=tekstveld3><br><br>
+<input type=button onclick="invoergegevens()" value="Start"><br><br>
+
+<div id=welkomsttekst></div>
